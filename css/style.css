@@ -1,0 +1,273 @@
+/* CSS RESET */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* CSS RESET */
+
+/* html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+/* :root{
+    --navbar-height: 59px;
+}  */ 
+
+/* CONTAINER */
+
+.__container{
+    width: 1299px;
+    margin: 0 auto;
+}
+
+/* CONTAINER */
+
+/* NAVBAR START */
+
+.__header{
+    background-color: beige;
+}
+
+.__navbar .__logo img{
+    border-radius: 65px;
+    margin: 8px 70px;
+}
+.__navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+.__navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.__navbar ul{
+    display: flex;
+    margin: 30px 135px;
+    gap: 50px;
+    margin-left: auto;
+}
+.__navbar ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /* color: black; */
+}
+
+.__navbar ul li a:hover{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 4px 15px;
+    background-color: white;
+    transition: 0s ease-in-out;
+}
+
+/* NAVBAR END */
+
+/* SECTION START */
+/* HERO START */
+.__hero{
+    height: 550px;
+    padding-top: 150px;
+}
+.__hero::before{
+    background-image: url(../img/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 100px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+.__hero .__content h1{
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+}
+
+.__hero .__content p{
+    font-size: 22px;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+}
+
+.__content{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.__hero .__content button{
+        font-size: 25px;
+        margin-top: 20px;
+        background-color: brown;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        height: 45px;
+        border: 2px solid white;
+        padding: 0 20px;
+        cursor: pointer;
+}
+/* HERO END */
+
+/* SERVICES START  */
+
+.__services{
+    padding-top: 60px;
+}
+
+.__services .__content h2{
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+}
+
+.__services .__card {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+.__services .__card .__box{
+    flex: 0 0 25%;
+    border: 2px solid brown;
+    border-radius: 15px;
+    padding: 30px 50px;
+    background-color: #f2f2f2;
+}
+.__services .__box img{
+    margin-bottom: 20px;
+}
+.__services .__box h3{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.__services .__box p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+/* SERVICES END  */
+
+/* OUR CLIENT START*/
+.__ourClient{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.__ourClient::before{
+    background-image: url(../img/__bg.jpg);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.__ourClient .__content h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+}
+.__ourClient .__row {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 40px;
+}
+/* OUR CLIENT END*/
+
+/* CONTACT US START */
+.__contactUs{
+    background-image: url(../img/contact-us-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.__contactUs .__content h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.__contactUs .__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.__contactUs .__form form {
+    width: 40%;
+}
+
+.__contactUs .__form form input , textarea{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    resize: none;
+}
+
+.__contactUs .__form form input{
+    height: 45px;
+}
+.__contactUs .__form form label{
+    font-size: 18px;
+}
+/* CONTACT US END */
+
+/* SECTION END */
+
+/* FOOTER START */
+footer p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* FOOTER END */
